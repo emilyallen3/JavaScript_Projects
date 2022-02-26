@@ -25,6 +25,11 @@ function my_first_function() {
     document.getElementById("Button_Text").innerHTML = str;
 }
 
-let text = "fontcolor() is deprecated in JavaScript";
-let result = text.fontcolor("green");
-document.getElementById("colored_text").innerHTML = result;
+//let text = "fontcolor() is deprecated in JavaScript";
+//let result = text.fontcolor("green");
+//document.getElementById("colored_text").innerHTML = result;
+
+function displayDate() {
+    document.getElementById('date').innerHTML = Date();
+}
+
