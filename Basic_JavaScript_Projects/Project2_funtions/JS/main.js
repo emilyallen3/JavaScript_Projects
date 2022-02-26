@@ -7,3 +7,7 @@ function icecream() {                                   //This is a function tha
     sentence += " in a cup with milk!";
     document.getElementById('contatenate').innerHTML = sentence;
 }
+function addition_function() {
+    var addition = 2 + 2;
+    document.getElementById("math").innerHTML = addition;
+}
