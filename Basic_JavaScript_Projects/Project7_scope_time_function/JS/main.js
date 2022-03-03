@@ -33,10 +33,10 @@ function Time_Function() {                                                      
     var Time = new Date().getHours();
     var Reply;
     if (Time < 12 == Time > 0) {
-        Replay = "It is morning time!";
+        Reply = "It is morning time!";
     }
     else if (Time >= 12 == Time < 18) {
-        Replay = "It is afternoon.";
+        Reply = "It is afternoon.";
     }
     else {
         Reply = "It is evening time.";
