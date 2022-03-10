@@ -1,0 +1,96 @@
+#menuBG {
+    width: 400px;
+    height:470px;
+    margin: 10px auto;
+    color: darkred;
+
+}
+#frmMenu {
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    color: darkred;
+    margin-left: -30%;
+}
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 20px auto;
+    float: right;
+    color: goldenrod;
+    background-color: antiquewhite;
+}
+.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+    color: goldenrod;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+.center {
+    width: 200px;
+    height: 200px;
+    float: left;
+    color: goldenrod;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+.right {
+    width: 200px;
+    height: 200px;
+    float: right;
+    color: goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 20px auto;
+    float: left;
+    color: goldenrod;
+    background-color: antiquewhite;
+}
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+    color: darkred;
+}
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width: 100px;
+    height: 40px;
+    display: block;
+    color: darkred;
+    background-color: antiquewhite;
+    border: 2px solid darkred;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+#btnOrder:hover {
+    background-color: goldenrod;
+    cursor: pointer;
+}
+body {
+    background-color: blanchedalmond;
+}
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: goldenrod;
+    text-shadow: 2px 2px black;
+}
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkred;
+    text-shadow: 1px 1px black;
+}
+div {
+    color: darkred;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
