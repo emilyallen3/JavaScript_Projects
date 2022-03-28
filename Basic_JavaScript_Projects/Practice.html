@@ -1,13 +1,108 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="jschallenge.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <title>DOM practice</title>
+        <a href="#about">About</a>
     </head>
     <body>
-        <p id = "demo"></p>
-        <script>
-        let url = document.URL;
-        document.getElementById("demo").innerHTML = url;
+        Horizontal Rule
+        <hr>
+    
+        <div id="slideshow">
+            <div>
+                <img src="money.jpeg">
+            </div>
+            <div>
+                <img src="money.jpeg">
+            </div>
+            <div>
+                Show me the Money!
+            </div>
+        </div>
+       
+    <div id="about">
+        <h1>About</h1>
+    </div>
+       
+    <p id="todo"></p>
+    <p id="mycat"></p>
+       
+    <div>
+        <button class="stickybtn" onclick="openForm()">Sticky</button>
+    </div>
+        
+        <div class="form-popupname" id="myFormname">
+            <form name="myForm" action="/action_page.php" class="form-container">
+                Name:
+                <input type="text" name="name" placeholder="Please enter your name" required>
+                <button type="submit">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+       
+       
+    <div>
+        <button class="open-button" onclick="openForm()">Open Form</button>
+
+        <div class="form-popup" id="myForm">
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" class="form-container">
+            Phone Number:
+            <input type="text" name="phonenumber" placeholder="Please submit your phone number to be entered to win." required>
+            <button type="submit" value="Submit">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+        
+
+
+       <!---<script>
+            var XML_Parser, XML_Document;
+
+            //Creates a text string
+            var Song = "<song>" +
+                "<title>Here Comes the Sun</title>" +
+                "<artist>The Beatles</artist>" +
+                "<year>1969</year>" +
+                "</song>";
+            
+            //Creates an XML DOM Parser
+            XML_Parser = new DOMParser();
+
+            //Creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(Song, "text/xml");
+
+            document.getElementById("XMLdemo").innerHTML = 
+            XML_Document.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
+
+        </script>-->
+       <script>
+           function openForm() {
+               document.getElementById("myForm").style.display = "block";
+           }
+           function closeForm() {
+               document.getElementById("myForm").style.display = "none";
+           }
         </script>
+        <script>
+            $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function() {
+                $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+            }, 3000);
+        </script>
+        <script>
+            var todo = '{"name":"dishes", "time": "30min", "priority": "medium"} ';
+            var JSONstring = JSON.parse(todo);
+            document.getElementById("todo").innerHTML = JSONstring.name + " take " + JSONstring.time;
+            localStorage.setItem("name","Thorin");
+            document.getElementById("mycat").innerHTML = localStorage.getItem("name");
+       </script>
     </body>
 </html>
