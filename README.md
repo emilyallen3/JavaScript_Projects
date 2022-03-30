@@ -1,6 +1,5 @@
 # JavaScript_Projects
- Repository for projects done for the JavaScript course at The Tech Academy
-These are some of the projects I made usinf JavaScript.
+Repository for projects done for the JavaScript course at The Tech Academy.
 
 Projects:
 <br>Pizza Menu
